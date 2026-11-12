@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { ArrowDown, MessageSquare, ArrowUpRight } from 'lucide-react'
 
 export default function Hero() {
   const scrollTo = (e, id) => {
@@ -16,6 +16,9 @@ export default function Hero() {
     }
   }
 
+  const whatsappUrl =
+    'https://wa.me/2348138566192?text=Hello%20Samuel%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20for%20my%20business.'
+
   return (
     <section id="hero" className="hero-section">
       <div className="hero-container">
@@ -23,9 +26,18 @@ export default function Hero() {
         <div className="hero-status-row">
           <div className="status-badge">
             <span className="status-indicator"></span>
-            <span className="status-text">Frontend Developer &bull; Available for Q4/Q1 Roles & Projects</span>
+            <span className="status-text">
+              Frontend Developer &bull; Websites for Small Businesses &amp; Brands
+            </span>
           </div>
-          <span className="hero-location font-mono">GLOBAL REMOTE / NIGERIA</span>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-location-wa font-mono"
+          >
+            <span>LAGOS, NIGERIA &bull; WHATSAPP: +234 813 856 6192</span>
+          </a>
         </div>
 
         {/* Main Headline */}
@@ -36,18 +48,19 @@ export default function Hero() {
           </h1>
         </div>
 
-        {/* Supporting Narrative & CTAs */}
+        {/* Supporting Intro & CTAs */}
         <div className="hero-bottom-grid">
           <div className="hero-description">
             <p className="lead-text">
-              Hi, I&apos;m <strong>Olabode Samuel</strong>. I engineer high-performance web applications 
-              at the intersection of clean architecture, modern React ecosystems, and rigorous 
-              design fidelity.
+              Hi, I&apos;m <strong>Olabode Samuel</strong> &mdash; a frontend developer crafting modern, 
+              responsive, and high-converting web applications. I build fast, mobile-friendly websites 
+              that showcase your services, display transparent prices, and turn everyday visitors into paying clients.
             </p>
             <div className="hero-tags">
+              <span className="tag-pill">Small Business Websites</span>
               <span className="tag-pill">React &bull; Vite</span>
-              <span className="tag-pill">Modern Web Architecture</span>
-              <span className="tag-pill">Accessible UI/UX</span>
+              <span className="tag-pill">Direct WhatsApp Integration</span>
+              <span className="tag-pill">Mobile-First Responsiveness</span>
             </div>
           </div>
 
@@ -61,6 +74,15 @@ export default function Hero() {
               <ArrowDown size={16} />
             </a>
             <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero-whatsapp"
+            >
+              <MessageSquare size={16} />
+              <span>WhatsApp Chat</span>
+            </a>
+            <a
               href="#contact"
               onClick={(e) => scrollTo(e, 'contact')}
               className="btn-hero-secondary"
@@ -71,27 +93,27 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Editorial Value Highlights */}
+        {/* Value Highlights */}
         <div className="hero-highlights">
           <div className="highlight-item">
             <span className="highlight-num font-mono">01</span>
             <div className="highlight-text">
-              <h4>Design Fidelity</h4>
-              <p>Translating wireframes and interactions into pixel-precise code.</p>
+              <h4>Direct Customer Conversion</h4>
+              <p>Turn website visitors into customer inquiries with frictionless WhatsApp booking.</p>
             </div>
           </div>
           <div className="highlight-item">
             <span className="highlight-num font-mono">02</span>
             <div className="highlight-text">
-              <h4>Clean Architecture</h4>
-              <p>Modular, maintainable components with predictable state flow.</p>
+              <h4>Fast on Mobile Devices</h4>
+              <p>Engineered to load instantly on 3G/4G smartphones with clean, lightweight React code.</p>
             </div>
           </div>
           <div className="highlight-item">
             <span className="highlight-num font-mono">03</span>
             <div className="highlight-text">
-              <h4>Performance First</h4>
-              <p>Fast render times, responsive layouts, and zero bloat.</p>
+              <h4>Clear Architecture &amp; Trust</h4>
+              <p>Transparent pricing menus, verified reviews, and responsive layouts that elevate your brand.</p>
             </div>
           </div>
         </div>

@@ -1,33 +1,33 @@
-import { Layout, Smartphone, Gauge, Code } from 'lucide-react'
+import { Layout, Smartphone, Gauge, Code, ShoppingBag } from 'lucide-react'
 
 export default function Services() {
   const services = [
     {
       num: '01',
-      title: 'Frontend Web Engineering',
-      desc: 'Architecting single-page applications and web interfaces with React, modern JavaScript (ES6+), and clean component architectures tailored for scale.',
-      deliverables: ['Custom React Components', 'Hooks & State Architecture', 'Vite & Modern Tooling', 'Clean Code Hygiene'],
-      icon: Code,
+      title: 'Small Business Websites & Landing Pages',
+      desc: 'Building high-converting, mobile-friendly websites for local businesses, salons, stores, and service providers. Complete with transparent pricing menus and direct WhatsApp booking.',
+      deliverables: ['Custom Mobile-First Design', 'WhatsApp Booking Systems', 'Service & Price Menus', 'Google Maps & Location Integration'],
+      icon: ShoppingBag,
     },
     {
       num: '02',
-      title: 'Interactive Web Applications',
-      desc: 'Developing specialized tools, dashboards, financial ledgers, and productivity software featuring real-time client-side calculation and persistent state.',
-      deliverables: ['Productivity Hubs', 'Data Dashboards', 'Web Calculators', 'LocalStorage Integration'],
+      title: 'Frontend Web Applications',
+      desc: 'Developing specialized web applications, dashboards, financial ledgers, and productivity software featuring real-time client-side calculation and persistent state.',
+      deliverables: ['Custom React SPAs', 'Interactive Dashboards', 'Web Calculators', 'LocalStorage Integration'],
       icon: Layout,
     },
     {
       num: '03',
-      title: 'UI/UX Implementation',
+      title: 'UI/UX Implementation & Figma to Code',
       desc: 'Translating design visions into exact, high-fidelity responsive websites with generous whitespace, disciplined typography, and subtle micro-interactions.',
-      deliverables: ['Figma to Production Code', 'Editorial Typography Systems', 'Design Tokens & CSS Variables', 'Micro-interactions'],
+      deliverables: ['Figma to React Code', 'Clean CSS Variables', 'Cross-Browser Verification', 'Micro-interactions'],
       icon: Smartphone,
     },
     {
       num: '04',
-      title: 'Performance & Accessibility',
-      desc: 'Engineering fast, lightweight web experiences that load instantly, score high on performance audits, and are fully keyboard and screen-reader accessible.',
-      deliverables: ['Semantic HTML5 Standards', 'Zero Bloat CSS', 'Mobile-First Responsiveness', 'SEO & OpenGraph Optimization'],
+      title: 'Speed, SEO & Mobile Optimization',
+      desc: 'Engineering fast, lightweight web experiences that load under 2 seconds on mobile data, score high on performance audits, and rank reliably on search engines.',
+      deliverables: ['Sub-2s Mobile Page Loads', 'Zero Bloat CSS Architecture', 'SEO & OpenGraph Metadata', 'Accessible HTML5 Standards'],
       icon: Gauge,
     },
   ]
@@ -43,7 +43,7 @@ export default function Services() {
 
         <div className="services-title-wrap">
           <h2 className="editorial-headline">
-            END-TO-END FRONTEND SOLUTIONS ENGINEERED FOR CLARITY AND IMPACT.
+            FRONTEND SOLUTIONS ENGINEERED TO TURN VISITORS INTO REAL CLIENTS.
           </h2>
         </div>
 
